@@ -58,12 +58,10 @@ public class Student {
             subjects = new ArrayList<>();
         }
 
-        // Máximo 3 asignaturas
         if (subjects.size() >= 3) {
             return false;
         }
 
-        // Evitar asignaturas repetidas
         for (Subject s : subjects) {
             if (s.getCode().equals(subject.getCode())) {
                 return false;
