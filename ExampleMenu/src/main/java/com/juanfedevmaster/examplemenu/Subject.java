@@ -1,32 +1,22 @@
-/*
- * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
- * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Class.java to edit this template
- */
 package com.juanfedevmaster.examplemenu;
 
-/**
- *
- * @author juanfe
- */
 public class Subject {
+
     private String name;
     private String code;
 
     public Subject() {
-    
     }
 
     public Subject(String name, String code) {
         this.name = name;
         this.code = code;
     }
-    
-    
-    
+
     public String getName() {
         return name;
     }
-    
+
     public void setName(String name) {
         this.name = name;
     }
@@ -38,6 +28,9 @@ public class Subject {
     public void setCode(String code) {
         this.code = code;
     }
-    
-    
+
+    @Override
+    public String toString() {
+        return name + " (" + code + ")";
+    }
 }
